@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Puntos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="js/maps_file.js"></script>
+    <script type="text/javascript" src="js/query_file.js"></script>
+</head>
+<body>
+<div class="contenedor">
+    <h1>Consulta de puntos</h1>
+    <div class="panel_consulta">
+        <form id="form_consulta" method="post">
+            <select name="radio" id="id_radio">
+                <option value="0.1">100 metros</option>
+                <option value="0.3">300 metros</option>
+                <option value="0.5">500 metros</option>
+                <option value="1" selected>1 kilometro</option>
+                <option value="3">3 kilometros</option>
+                <option value="5">5 kilometros</option>
+            </select>
+            <input name="latitud" type="hidden" id="latitud">
+            <input name="longitud" type="hidden" id="longitud">
+            <button id="btn_consulta">Consultar</button>
+        </form>
+    </div>
+    <div id="mapa"></div>
+</div>
+</body>
+</html>

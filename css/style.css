@@ -1,0 +1,20 @@
+.contenedor{
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    padding: 10px;
+}
+.contenedor h1{
+    padding: 0;
+    margin: 0;
+}
+#form_consulta{
+    text-align: center;
+}
+#form_consulta input{
+    display: inline-block;
+}
+#mapa{
+    width: 800px;
+    height: 600px;
+}
